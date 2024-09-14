@@ -67,11 +67,40 @@ python run.py
 
 Output 
 
-![Screenshot (856)](https://github.com/user-attachments/assets/e83e6b77-8d3b-48de-95cd-8aa69431c6e1)
+![Screenshot 2024-09-14 181355](https://github.com/user-attachments/assets/97916218-e92b-4132-b105-9225c407c518)
 
-![Screenshot (859)](https://github.com/user-attachments/assets/55fb7a76-32e3-4528-9792-a84eb6d97739)
 
-![Screenshot (858)](https://github.com/user-attachments/assets/708c54eb-f61d-46c7-8107-139f719c2eb2)
+![Screenshot 2024-09-14 181408](https://github.com/user-attachments/assets/7c3051b7-630c-41b0-bcec-bdf99e7a62f4)
+
+
+Project Structure
+resume_analyzer/
+├── app/
+│ ├── main/
+│ │ ├── static/
+│ │ │ ├── css/
+│ │ │ │ └── styles.css
+│ │ │ ├── js/
+│ │ │ │ └── scripts.js
+│ │ ├── templates/
+│ │ │ ├── base.html
+│ │ │ └── index.html
+│ │ ├── __init__.py
+│ │ ├── routes.py
+│ │ ├── forms.py
+│ ├── __init__.py
+├── models/
+│ ├── __init__.py
+│ ├── resume_parser.py
+│ ├── job_description_parser.py
+│ ├── resume_scorer.py
+├── tests/
+│ ├── test_routes.py
+│ └── test_models.py
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── run.py
 
 
 🎨 Customization
