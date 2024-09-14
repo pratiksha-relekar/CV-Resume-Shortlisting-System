@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!-- Declares the XML version and encoding -->
+<project version="4">  <!-- Defines a project element with a version attribute set to "4" -->
+
+  <!-- Component for managing version control system (VCS) directory mappings -->
+  <component name="VcsDirectoryMappings">  <!-- Defines a component named "VcsDirectoryMappings" -->
+    
+    <!-- Mapping for the project directory -->
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />  <!-- Maps the project directory to the Git version control system -->
+    
+  </component>
+
+</project>

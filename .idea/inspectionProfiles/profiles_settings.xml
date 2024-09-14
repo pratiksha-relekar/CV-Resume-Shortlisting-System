@@ -1,0 +1,6 @@
+<component name="InspectionProjectProfileManager">  <!-- Defines a component with the name "InspectionProjectProfileManager" -->
+  <settings>  <!-- Contains settings for the component -->
+    <option name="USE_PROJECT_PROFILE" value="false" />  <!-- Option setting named "USE_PROJECT_PROFILE" is set to "false" -->
+    <version value="1.0" />  <!-- Specifies the version of the component as "1.0" -->
+  </settings>
+</component>

@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">  <!-- Defines a component with the name "InspectionProjectProfileManager" -->
+  <profile version="1.0">  <!-- Specifies a profile configuration with version 1.0 -->
+    
+    <option name="myName" value="Project Default" />  <!-- Sets an option with the name "myName" to the value "Project Default" -->
+    
+    <!-- Configuration for an inspection tool -->
+    <inspection_tool 
+        class="PyPackageRequirementsInspection"  <!-- Specifies the inspection tool class, here it is "PyPackageRequirementsInspection" -->
+        enabled="true"  <!-- Enables the inspection tool -->
+        level="WARNING"  <!-- Sets the severity level of the inspection to "WARNING" -->
+        enabled_by_default="true">  <!-- Indicates that the tool is enabled by default -->
+      
+      <!-- Option for ignored packages -->
+      <option name="ignoredPackages">  <!-- Option named "ignoredPackages" contains a list of packages to ignore -->
+        <value>  <!-- The value tag wraps the list of ignored packages -->
+          <list size="1">  <!-- Defines a list of ignored packages with a size of 1 -->
+            <item index="0" class="java.lang.String" itemvalue="flask_bcrypt" />  <!-- The first (and only) item in the list, with the value "flask_bcrypt" -->
+          </list>
+        </value>
+      </option>
+      
+    </inspection_tool>
+    
+  </profile>
+</component>

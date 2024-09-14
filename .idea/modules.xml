@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!-- Declares the XML version and encoding -->
+<project version="4">  <!-- Defines a project element with a version attribute set to "4" -->
+
+  <!-- Component for managing project modules -->
+  <component name="ProjectModuleManager">  <!-- Defines a component with the name "ProjectModuleManager" -->
+    <modules>  <!-- Contains the list of modules within the project -->
+      
+      <!-- Individual module configuration -->
+      <module fileurl="file://$PROJECT_DIR$/.idea/resume-analyzer.iml"  <!-- Specifies the file URL of the module's .iml file -->
+              filepath="$PROJECT_DIR$/.idea/resume-analyzer.iml" />  <!-- Specifies the file path of the module's .iml file -->
+      
+    </modules>
+  </component>
+
+</project>

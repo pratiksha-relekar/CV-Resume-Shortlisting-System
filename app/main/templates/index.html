@@ -1,0 +1,67 @@
+{% extends "base.html" %}  <!-- Inherit from base.html template -->
+{% block content %}
+<div class="container">  <!-- Container for responsive design -->
+    <h1>Upload Your Resume</h1>  <!-- Page title -->
+    <form method="POST" enctype="multipart/form-data">  <!-- Form for file upload, using POST method and multipart encoding -->
+        {{ form.hidden_tag() }}  <!-- CSRF protection -->
+        
+        <!-- Resume Upload Field -->
+        <div class="form-group">
+            {{ form.resume.label(class="form-control-label") }}  <!-- Label for resume upload -->
+            {{ form.resume(class="form-control", accept=".pdf,.doc,.docx") }}  <!-- File input for resume with restrictions on file type -->
+        </div>
+        
+        <!-- Job Title Field -->
+        <div class="form-group">
+            {{ form.job_title.label(class="form-control-label") }}  <!-- Label for job title -->
+            {{ form.job_title(class="form-control") }}  <!-- Input for job title -->
+        </div>
+        
+        <!-- Job Description Field -->
+        <div class="form-group">
+            {{ form.job_description.label(class="form-control-label") }}  <!-- Label for job description -->
+            {{ form.job_description(class="form-control") }}  <!-- Input for job description -->
+        </div>
+        
+        <!-- Job Responsibilities Field -->
+        <div class="form-group">
+            {{ form.job_responsibilities.label(class="form-control-label") }}  <!-- Label for job responsibilities -->
+            {{ form.job_responsibilities(class="form-control") }}  <!-- Input for job responsibilities -->
+        </div>
+        
+        <!-- Job Experience Field -->
+        <div class="form-group">
+            {{ form.job_experience.label(class="form-control-label") }}  <!-- Label for job experience -->
+            {{ form.job_experience(class="form-control") }}  <!-- Input for job experience -->
+        </div>
+        
+        <!-- Job Skills Field -->
+        <div class="form-group">
+            {{ form.job_skills.label(class="form-control-label") }}  <!-- Label for job skills -->
+            {{ form.job_skills(class="form-control") }}  <!-- Input for job skills -->
+        </div>
+        
+        <!-- Job Education Field -->
+        <div class="form-group">
+            {{ form.job_education.label(class="form-control-label") }}  <!-- Label for job education -->
+            {{ form.job_education(class="form-control") }}  <!-- Input for job education -->
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}  <!-- Submit button -->
+        </div>
+    </form>
+    
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="alert alert-info mt-4">  <!-- Container for flash messages -->
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>  <!-- Flash message based on category -->
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}

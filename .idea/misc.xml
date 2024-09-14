@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!-- Declares the XML version and encoding -->
+<project version="4">  <!-- Defines a project element with a version attribute set to "4" -->
+
+  <!-- Component for the Black code formatter configuration -->
+  <component name="Black">  <!-- Defines a component with the name "Black" -->
+    <option name="sdkName" value="Python 3.12 (resume-analyzer)" />  <!-- Specifies the SDK name as "Python 3.12 (resume-analyzer)" for this component -->
+  </component>
+
+  <!-- Component for Project Root Management -->
+  <component name="ProjectRootManager" version="2"  <!-- Defines a component named "ProjectRootManager" with version "2" -->
+            project-jdk-name="Python 3.12 (resume-analyzer)"  <!-- Sets the project JDK (Java Development Kit) name to "Python 3.12 (resume-analyzer)" -->
+            project-jdk-type="Python SDK" />  <!-- Specifies the type of SDK used by the project, in this case, "Python SDK" -->
+
+</project>

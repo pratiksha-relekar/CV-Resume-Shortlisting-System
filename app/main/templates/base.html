@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensures the page is responsive and scales well on different devices -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">  <!-- Links to an external CSS file located in the 'static/css' directory -->
+    <title>Resume Analyzer</title>  <!-- Sets the title of the webpage, displayed in the browser's title bar or tab -->
+</head>
+<body>
+    <div class="container">  <!-- Main container for page content, typically styled by a CSS framework like Bootstrap -->
+        
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>  <!-- Display flash messages, styled according to their category (e.g., success, error) -->
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- Content Block -->
+        {% block content %}{% endblock %}  <!-- Placeholder block where specific page content will be inserted -->
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>  <!-- Links to an external JavaScript file located in the 'static/js' directory -->
+</body>
+</html>

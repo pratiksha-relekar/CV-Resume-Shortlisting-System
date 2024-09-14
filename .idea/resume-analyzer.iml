@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!-- Declares the XML version and encoding -->
+<module type="PYTHON_MODULE" version="4">  <!-- Defines a module element with the type "PYTHON_MODULE" and version "4" -->
+
+  <!-- Component for managing the module's root settings -->
+  <component name="NewModuleRootManager">  <!-- Defines a component named "NewModuleRootManager" -->
+    
+    <!-- Content root definition -->
+    <content url="file://$MODULE_DIR$">  <!-- Specifies the content root of the module, pointing to the module's directory -->
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />  <!-- Excludes the ".venv" folder from the content root, meaning it won't be considered part of the module's sources -->
+    </content>
+
+    <!-- Order entries for classpath and sources -->
+    <orderEntry type="inheritedJdk" />  <!-- Indicates that the module will use the JDK (or in this case, Python SDK) inherited from the project settings -->
+    <orderEntry type="sourceFolder" forTests="false" />  <!-- Marks the source folder in the module; "forTests=false" indicates it's not a test source folder -->
+
+  </component>
+</module>
