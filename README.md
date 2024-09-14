@@ -73,34 +73,7 @@ Output
 ![Screenshot 2024-09-14 181408](https://github.com/user-attachments/assets/7c3051b7-630c-41b0-bcec-bdf99e7a62f4)
 
 
-Project Structure
-resume_analyzer/
-├── app/
-│ ├── main/
-│ │ ├── static/
-│ │ │ ├── css/
-│ │ │ │ └── styles.css
-│ │ │ ├── js/
-│ │ │ │ └── scripts.js
-│ │ ├── templates/
-│ │ │ ├── base.html
-│ │ │ └── index.html
-│ │ ├── __init__.py
-│ │ ├── routes.py
-│ │ ├── forms.py
-│ ├── __init__.py
-├── models/
-│ ├── __init__.py
-│ ├── resume_parser.py
-│ ├── job_description_parser.py
-│ ├── resume_scorer.py
-├── tests/
-│ ├── test_routes.py
-│ └── test_models.py
-├── .gitignore
-├── README.md
-├── requirements.txt
-└── run.py
+![Screenshot 2024-09-14 181611](https://github.com/user-attachments/assets/8bf23548-750e-4d1c-ad7b-cef41f35ed86)
 
 
 🎨 Customization
